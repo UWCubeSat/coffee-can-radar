@@ -1091,8 +1091,6 @@ Wire Wire Line
 Connection ~ 1350 850 
 Wire Wire Line
 	900  850  1350 850 
-Wire Wire Line
-	1350 1550 1350 1600
 $Comp
 L power:GND #PWR0104
 U 1 1 600D7986
@@ -1105,7 +1103,7 @@ F 3 "" H 1350 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pspice:DIODE D1
+L Device:LED D1
 U 1 1 6045E0D9
 P 1350 1350
 F 0 "D1" V 1300 1600 50  0000 C CNN
@@ -1113,7 +1111,7 @@ F 1 "DIODE" V 1400 1600 50  0000 C CNN
 F 2 "LED_THT:LED_D5.0mm" H 1350 1350 50  0001 C CNN
 F 3 "~" H 1350 1350 50  0001 C CNN
 	1    1350 1350
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R1
@@ -1183,4 +1181,8 @@ Wire Wire Line
 	7350 6150 7350 6200
 Wire Wire Line
 	3250 2950 3250 3050
+Wire Wire Line
+	1350 1150 1350 1200
+Wire Wire Line
+	1350 1500 1350 1600
 $EndSCHEMATC
