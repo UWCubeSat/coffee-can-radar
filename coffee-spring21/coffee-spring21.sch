@@ -604,30 +604,6 @@ Wire Wire Line
 Wire Wire Line
 	3550 4750 3550 5000
 Wire Wire Line
-	1350 2850 1350 2900
-$Comp
-L power:GND #PWR0126
-U 1 1 6045E0E7
-P 1350 2900
-F 0 "#PWR0126" H 1350 2650 50  0001 C CNN
-F 1 "GND" H 1355 2727 50  0000 C CNN
-F 2 "" H 1350 2900 50  0001 C CNN
-F 3 "" H 1350 2900 50  0001 C CNN
-	1    1350 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Battery BT2
-U 1 1 6045E0E6
-P 1350 2650
-F 0 "BT2" H 1550 2700 50  0000 C CNN
-F 1 "6V" H 1550 2600 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" V 1350 2710 50  0001 C CNN
-F 3 "~" V 1350 2710 50  0001 C CNN
-	1    1350 2650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	1350 2050 1350 2300
 $Comp
 L Device:Battery BT1
@@ -640,16 +616,12 @@ F 3 "~" V 1350 1910 50  0001 C CNN
 	1    1350 1850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1350 1250 1350 1650
 Connection ~ 2150 2300
 Wire Wire Line
 	1350 2300 2150 2300
 Wire Wire Line
 	1800 1250 2050 1250
 Connection ~ 1800 1250
-Wire Wire Line
-	1350 1250 1800 1250
 $Comp
 L power:GND #PWR0104
 U 1 1 606BDEB9
@@ -857,9 +829,6 @@ Wire Wire Line
 	7200 1750 6550 1750
 Wire Wire Line
 	12200 3100 11750 3100
-Wire Wire Line
-	1350 2300 1350 2450
-Connection ~ 1350 2300
 Text GLabel 11750 3100 0    50   Output ~ 0
 IF_SIGNAL
 Wire Wire Line
@@ -1108,7 +1077,7 @@ U 1 1 61327E00
 P 8700 6850
 F 0 "R18" H 8800 6850 50  0000 C CNN
 F 1 "220" V 8700 6850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 8630 6850 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8630 6850 50  0001 C CNN
 F 3 "~" H 8700 6850 50  0001 C CNN
 	1    8700 6850
 	1    0    0    -1  
@@ -1209,7 +1178,7 @@ L Device:R R16
 U 1 1 61427765
 P 5600 6050
 F 0 "R16" H 5700 6050 50  0000 C CNN
-F 1 "100k" V 5600 6050 50  0000 C CNN
+F 1 "10k" V 5600 6050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 5530 6050 50  0001 C CNN
 F 3 "~" H 5600 6050 50  0001 C CNN
 	1    5600 6050
@@ -1462,4 +1431,35 @@ F 3 "~" H 11600 5950 50  0001 C CNN
 	5    11600 5950
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1350 1250 1800 1250
+Wire Wire Line
+	1350 1250 1350 1650
+Connection ~ 1350 2300
+Wire Wire Line
+	1350 2300 1350 2450
+$Comp
+L Device:Battery BT2
+U 1 1 6045E0E6
+P 1350 2650
+F 0 "BT2" H 1550 2700 50  0000 C CNN
+F 1 "6V" H 1550 2600 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" V 1350 2710 50  0001 C CNN
+F 3 "~" V 1350 2710 50  0001 C CNN
+	1    1350 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0126
+U 1 1 6045E0E7
+P 1350 2900
+F 0 "#PWR0126" H 1350 2650 50  0001 C CNN
+F 1 "GND" H 1355 2727 50  0000 C CNN
+F 2 "" H 1350 2900 50  0001 C CNN
+F 3 "" H 1350 2900 50  0001 C CNN
+	1    1350 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 2850 1350 2900
 $EndSCHEMATC
